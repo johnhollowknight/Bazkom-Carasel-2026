@@ -487,6 +487,12 @@ body {
     .info-card {
         width: 100%;
         padding: 20px;
+        box-sizing: border-box;
+        flex: none;
+    }
+
+    .info-card h2 {
+        margin: 0;
     }
 
     .page-text {
