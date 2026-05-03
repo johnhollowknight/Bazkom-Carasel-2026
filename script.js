@@ -1,13 +1,8 @@
-// --- Cache DOM Elements ---
 const els = {
-  days: document.getElementById("days"),
-  hours: document.getElementById("hours"),
-  minutes: document.getElementById("minutes"),
-  seconds: document.getElementById("seconds"),
-  countdownView: document.getElementById("countdown-view"),
-  eventView: document.getElementById("event-view"),
-  enterBtn: document.getElementById("enter-site-btn"),
-  dashboard: document.getElementById("dashboard-layout"),
+  days: document.querySelectorAll(".days"),
+  hours: document.querySelectorAll(".hours"),
+  minutes: document.querySelectorAll(".minutes"),
+  seconds: document.querySelectorAll(".seconds"),
   sidebar: document.getElementById("sidebar"),
   mainContent: document.querySelector('.main-content'),
   openBtn: document.getElementById('sidebar-open-btn'),
@@ -15,46 +10,33 @@ const els = {
   pages: document.querySelectorAll(".page-section")
 };
 
-// --- Countdown Logic ---
-// Set exact date and time
-const targetDate = new Date("May 3, 2026 14:00:00");
+const eventDate = new Date("July 31, 2026 00:00:00").getTime();
 
-// Convert target date into milliseconds for timer
-const eventDate = targetDate.getTime();
+const setAll = (nodeList, value) => {
+  nodeList.forEach(el => { el.textContent = value; });
+};
 
-const countdownInterval = setInterval(() => {
+const updateCountdown = () => {
   const distance = eventDate - Date.now();
 
   if (distance <= 0) {
     clearInterval(countdownInterval);
-
-    ['days', 'hours', 'minutes', 'seconds'].forEach(id => els[id].textContent = "00");
-    els.countdownView.style.display = "none";
-    els.eventView.style.display = "flex";
-
-    // requestAnimationFrame ensures the display flex applies before the transition starts
-    requestAnimationFrame(() => {
-      els.eventView.style.opacity = "1";
-      els.eventView.style.transform = "translateY(0)";
-    });
+    setAll(els.days, "00");
+    setAll(els.hours, "00");
+    setAll(els.minutes, "00");
+    setAll(els.seconds, "00");
     return;
   }
 
-  els.days.textContent = String(Math.floor(distance / 86400000)).padStart(2, "0");
-  els.hours.textContent = String(Math.floor((distance % 86400000) / 3600000)).padStart(2, "0");
-  els.minutes.textContent = String(Math.floor((distance % 3600000) / 60000)).padStart(2, "0");
-  els.seconds.textContent = String(Math.floor((distance % 60000) / 1000)).padStart(2, "0");
-}, 1000);
+  setAll(els.days, String(Math.floor(distance / 86400000)).padStart(2, "0"));
+  setAll(els.hours, String(Math.floor((distance % 86400000) / 3600000)).padStart(2, "0"));
+  setAll(els.minutes, String(Math.floor((distance % 3600000) / 60000)).padStart(2, "0"));
+  setAll(els.seconds, String(Math.floor((distance % 60000) / 1000)).padStart(2, "0"));
+};
 
+updateCountdown();
+const countdownInterval = setInterval(updateCountdown, 1000);
 
-// --- View Event Button ---
-els.enterBtn?.addEventListener("click", () => {
-  els.eventView.style.display = "none";
-  els.dashboard.style.display = "flex";
-});
-
-
-// --- Sidebar Logic ---
 const toggleSidebarBtn = (show) => {
   if (els.openBtn) els.openBtn.style.display = show ? 'block' : 'none';
 };
@@ -79,16 +61,12 @@ els.openBtn?.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
-// Close sidebar on outside click
 document.addEventListener('click', (e) => {
   if (els.sidebar?.classList.contains('active') && !els.sidebar.contains(e.target) && e.target !== els.openBtn) {
     closeSidebar();
   }
 });
 
-
-// --- Page Switching Logic ---
-// We attach this directly to the window so the inline onclick="" in HTML can still find it
 window.switchPage = (pageId) => {
   els.pages.forEach(section => section.classList.remove("active"));
   document.getElementById(pageId)?.classList.add("active");

@@ -11,34 +11,6 @@
 
 <body>
 
-    <div id="countdown-view" class="view-container">
-        <h1>Seranova Starts In...</h1>
-        <div class="timer-container">
-            <div class="time-box">
-                <span id="days">00</span>
-                <p>Days</p>
-            </div>
-            <div class="time-box">
-                <span id="hours">00</span>
-                <p>Hours</p>
-            </div>
-            <div class="time-box">
-                <span id="minutes">00</span>
-                <p>Minutes</p>
-            </div>
-            <div class="time-box">
-                <span id="seconds">00</span>
-                <p>Seconds</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="event-view" class="view-container">
-        <h1>All Aboard!</h1>
-        <img src="assets/Seranova.png" alt="Seranova" class="page-title-image">
-        <button id="enter-site-btn" class="action-button">View Event</button>
-    </div>
-
     <div id="dashboard-layout">
         <button id="sidebar-open-btn" aria-label="Open sidebar">
             <i class="bx bx-menu"></i>
@@ -71,6 +43,25 @@
 
         <div class="main-content">
             <div id="home-page" class="page-section active">
+                <h2 class="countdown-title">Opening Starts In...</h2>
+                <div class="timer-container">
+                    <div class="time-box">
+                        <span class="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
                 <h1 class="welcome-title">Hαi, Sҽɾαʋiαɳʂ!</h1>
                 <div class="card-grid">
                     <div class="info-card">
@@ -89,64 +80,83 @@
             </div>
 
             <div id="kompetisi-page" class="page-section">
+                <h2 class="countdown-title">Opening Starts In...</h2>
+                <div class="timer-container">
+                    <div class="time-box">
+                        <span class="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-box">
+                        <span class="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
                 <h1 class="welcome-title">Kompetisi</h1>
                 <div class="card-grid">
                     <div class="info-card">
-                        <h2><img src="assets/ASC.png" alt="ASC" class="page-title-image"></h2>
+                        <h2><img src="assets/ASCFrame.png" alt="Seranova" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-asc')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/Band.png" alt="BAND" class="page-title-image"></h2>
+                        <h2><img src="assets/BandFrame.png" alt="BAND" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-band')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/BasketPutra.png" alt="BASKET PUTRA" class="page-title-image"></h2>
+                        <h2><img src="assets/BasketPutraFrame.png" alt="BASKET PUTRA" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-basket-putra')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/BasketPutri.png" alt="BASKET PUTRI" class="page-title-image"></h2>
+                        <h2><img src="assets/BasketPutriFrame.png" alt="BASKET PUTRI" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-basket-putri')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/CCA.png" alt="CCA" class="page-title-image"></h2>
+                        <h2><img src="assets/CCAFrame.png" alt="CCA" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-cca')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/CCI.png" alt="CCI" class="page-title-image"></h2>
+                        <h2><img src="assets/CCIFrame.png" alt="CCI" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-cci')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/Cheers.png" alt="CHEERLEADER LEVEL 2" class="page-title-image"></h2>
+                        <h2><img src="assets/CheersFrame.png" alt="CHEERLEADER LEVEL 2" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-cheerleader-level-2')">See
                             More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/Cheers.png" alt="CHEERLEADER LEVEL 4" class="page-title-image"></h2>
+                        <h2><img src="assets/CheersFrame.png" alt="CHEERLEADER LEVEL 4" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-cheerleader-level-4')">See
                             More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/FutsalPutra.png" alt="FUTSAL PUTRA" class="page-title-image"></h2>
+                        <h2><img src="assets/FutsalPutraFrame.png" alt="FUTSAL PUTRA" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-futsal-putra')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/FutsalPutri.png" alt="FUTSAL PUTRI" class="page-title-image"></h2>
+                        <h2><img src="assets/FutsalPutriFrame.png" alt="FUTSAL PUTRI" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-futsal-putri')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/MLBB.png" alt="MLBB" class="page-title-image"></h2>
+                        <h2><img src="assets/MLBBFrame.png" alt="MLBB" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-mlbb')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/RatohJaroe.png" alt="RATOH JAROE" class="page-title-image"></h2>
+                        <h2><img src="assets/RatohJaroeFrame.png" alt="RATOH JAROE" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-ratoh-jaroe')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/TariTradisional.png" alt="TARI TRADISIONAL" class="page-title-image"></h2>
+                        <h2><img src="assets/TariTradisionalFrame.png" alt="TARI TRADISIONAL" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-tari-tradisional')">See More</button>
                     </div>
                     <div class="info-card">
-                        <h2><img src="assets/VocalGroup.png" alt="VOCAL GROUP" class="page-title-image"></h2>
+                        <h2><img src="assets/VocalGroupFrame.png" alt="VOCAL GROUP" class="page-title-image"></h2>
                         <button class="action-button sm" onclick="switchPage('comp-vocal-group')">See More</button>
                     </div>
                 </div>
@@ -154,7 +164,7 @@
 
             <div id="comp-asc" class="page-section">
                 <h1 class="welcome-title">ASEAN Simulation Conference</h1>
-                <h2><img src="assets/ASC.png" alt="ASC" class="page-title-image"></h2>
+                <h2><img src="assets/ASCFrame.png" alt="ASC" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1vWPbTAK_HE6GDnm30Tbhhesm_aMZIMDE/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfS_nYeZI3xAY3OxJCPSFuyvUDfZidDlksVMgoUlfh6M3DE2A/viewform?usp=preview"
@@ -167,7 +177,7 @@
 
             <div id="comp-band" class="page-section">
                 <h1 class="welcome-title">BAND</h1>
-                <h2><img src="assets/Band.png" alt="BAND" class="page-title-image"></h2>
+                <h2><img src="assets/BandFrame.png" alt="BAND" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1gKPPD2RqRHOLwa0hgHywrXZ-4iHGOEUU/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOJk37OBKxoX8pMeWQBWcmCP-PU8YJZfasgp-5xa7Vgz7jjA/viewform?usp=preview"
@@ -180,7 +190,7 @@
 
             <div id="comp-basket-putra" class="page-section">
                 <h1 class="welcome-title">BASKET PUTRA</h1>
-                <h2><img src="assets/BasketPutra.png" alt="BASKET PUTRA" class="page-title-image"></h2>
+                <h2><img src="assets/BasketPutraFrame.png" alt="BASKET PUTRA" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1nA6BmwBTi2fLyIL_S50crzdDMIUV3GHO/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvPDJpSrOKcQfSschVoeMiplydqDOtHq8GJ7ATJLyzAqVcrg/viewform?usp=preview"
@@ -193,7 +203,7 @@
 
             <div id="comp-basket-putri" class="page-section">
                 <h1 class="welcome-title">BASKET PUTRI</h1>
-                <h2><img src="assets/BasketPutri.png" alt="BASKET PUTRI" class="page-title-image"></h2>
+                <h2><img src="assets/BasketPutriFrame.png" alt="BASKET PUTRI" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1E-XZp8FY7Ao9bQFhN7O4oWYJBCDgPeVf/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSen6bkiBqcVHMTirqSS00ZuTuYRQyfjJYEaTRACgbjhz3nsrw/viewform?usp=preview"
@@ -206,7 +216,7 @@
 
             <div id="comp-cca" class="page-section">
                 <h1 class="welcome-title">CERDAS CERMAT ALKITAB</h1>
-                <h2><img src="assets/CCA.png" alt="CCA" class="page-title-image"></h2>
+                <h2><img src="assets/CCAFrame.png" alt="CCA" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/18pMSrLraanpO6ac4MzSK7OjCCJxk7J6g/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScMxW5KF3KxCKy1Wwp4H5Prj0XSI9hPgQO-Jt25Fj9m0sd3LA/viewform?usp=preview"
@@ -219,7 +229,7 @@
 
             <div id="comp-cci" class="page-section">
                 <h1 class="welcome-title">CERDAS CERMAT ISLAM</h1>
-                <h2><img src="assets/CCI.png" alt="CCI" class="page-title-image"></h2>
+                <h2><img src="assets/CCIFrame.png" alt="CCI" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1RDE_y1ZbttFXf0P106pPezHKdU2Zzi2c/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbk-x2-Hl0rGhF1j2GHU0nos0lD7FAPl9rZZ0c9IFeHK0C6A/viewform?usp=preview"
@@ -232,7 +242,7 @@
 
             <div id="comp-cheerleader-level-2" class="page-section">
                 <h1 class="welcome-title">CHEERLEADER LEVEL 2</h1>
-                <h2><img src="assets/Cheers.png" alt="CHEERLEADER LEVEL 2" class="page-title-image"></h2>
+                <h2><img src="assets/CheersFrame.png" alt="CHEERLEADER LEVEL 2" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1G5wNMBlit_08wFx5Y6TfybL80s2Ekyht/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5d8ws7pcnXZXADP8F1O8w7ouuavXPMaRc6MRPmzD453GtHw/viewform?usp=preview"
@@ -245,7 +255,7 @@
 
             <div id="comp-cheerleader-level-4" class="page-section">
                 <h1 class="welcome-title">CHEERLEADER LEVEL 4</h1>
-                <h2><img src="assets/Cheers.png" alt="CHEERLEADER LEVEL 4" class="page-title-image"></h2>
+                <h2><img src="assets/CheersFrame.png" alt="CHEERLEADER LEVEL 4" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1UfkQPlRHDqTBKaadv0T_0wboAn-uH1vo/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScyirXls0Jz9aDrtRvoWm3wyOY2d3uATpKOp1CbnVrEEh8vAQ/viewform?usp=preview"
@@ -258,7 +268,7 @@
 
             <div id="comp-futsal-putra" class="page-section">
                 <h1 class="welcome-title">FUTSAL PUTRA</h1>
-                <h2><img src="assets/FutsalPutra.png" alt="FUTSAL PUTRA" class="page-title-image"></h2>
+                <h2><img src="assets/FutsalPutraFrame.png" alt="FUTSAL PUTRA" class="page-title-image"></h2>
                 <div style="margin-top: 20px;"> 
                     <a href="https://drive.google.com/file/d/10RT8YPmLTo5WmJ4lrCvJV-D96NH4-qB4/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz5qfUvdyZEvK5c3NzWVkzCa8yvOR8teTgT9VbBlx-r13RBg/viewform?usp=preview"
@@ -271,7 +281,7 @@
 
             <div id="comp-futsal-putri" class="page-section">
                 <h1 class="welcome-title">FUTSAL PUTRI</h1>
-                <h2><img src="assets/FutsalPutri.png" alt="FUTSAL PUTRI" class="page-title-image"></h2>
+                <h2><img src="assets/FutsalPutriFrame.png" alt="FUTSAL PUTRI" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/15RPmXGTju4tRhOIQFxShd8EnjLKYqBMR/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScQMppdHZdCksgYRaX2SCoWPtgkQkYp1nrakzyUM3jg38FBVg/viewform?usp=preview"
@@ -284,7 +294,7 @@
 
             <div id="comp-mlbb" class="page-section">
                 <h1 class="welcome-title">MLBB</h1>
-                <h2><img src="assets/MLBB.png" alt="MLBB" class="page-title-image"></h2>
+                <h2><img src="assets/MLBBFrame.png" alt="MLBB" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1GU8JGzEouRo2UCLwQ7wqMmxw7ucqy3pd/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu6ksY_bIISilhNgt8DeCoqW1QvAck97wuG_ckyrFYFijRmw/viewform?usp=preview"
@@ -297,7 +307,7 @@
 
             <div id="comp-ratoh-jaroe" class="page-section">
                 <h1 class="welcome-title">RATOH JAROE</h1>
-                <h2><img src="assets/RatohJaroe.png" alt="RATOH JAROE" class="page-title-image"></h2>
+                <h2><img src="assets/RatohJaroeFrame.png" alt="RATOH JAROE" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1Ppit-4gG33Byvhcv37vVxSW-ZSfn_PD-/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2YfCfNwhwPr0cIloQndhbNHE4RxlXqlp_0RgBlyRSMNusgg/viewform?usp=preview"
@@ -310,7 +320,7 @@
 
             <div id="comp-tari-tradisional" class="page-section">
                 <h1 class="welcome-title">TARI TRADISIONAL</h1>
-                <h2><img src="assets/TariTradisional.png" alt="TARI TRADISIONAL" class="page-title-image"></h2>
+                <h2><img src="assets/TariTradisionalFrame.png" alt="TARI TRADISIONAL" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1es5Xk1yPljYuMYkKvuqyZavKnT445z01/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrTtOx0frib1Yob1LweQtg86cfX46yz3eSTRIZa3pVIIgdvQ/viewform?usp=preview"
@@ -323,7 +333,7 @@
 
             <div id="comp-vocal-group" class="page-section">
                 <h1 class="welcome-title">VOCAL GROUP</h1>
-                <h2><img src="assets/VocalGroup.png" alt="VOCAL GROUP" class="page-title-image"></h2>
+                <h2><img src="assets/VocalGroupFrame.png" alt="VOCAL GROUP" class="page-title-image"></h2>
                 <div style="margin-top: 20px;">
                     <a href="https://drive.google.com/file/d/1O39uNyRJGKXV4VhqIHjkhjVIZ0ZHRf7n/view?usp=drivesdk" class="action-button sm" style="margin: 5px;" target="_blank">Rulebook</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7yloUbJnVXAoWdtvjHk3_JHt8YeoCQFHeRrajqz4xFvI8Cw/viewform?usp=preview"
@@ -355,6 +365,9 @@
                     Melalui <span class="kw-purple">BAZKOM CARASEL SERANOVA 2026</span>, kami menghadirkan perjalanan
                     menuju ruang di mana setiap mimpi, betapapun kecil, dapat bersinar tanpa batas.
                 </div>
+                <div style="margin-top: 30px;">
+                    <button class="action-button sm" onclick="switchPage('home-page')">Back</button>
+                </div>
             </div>
 
             <div id="bazkom-page" class="page-section">
@@ -371,6 +384,9 @@
                     dan mengelola sebuah acara, sekaligus memberikan penghargaan terhadap kreativitas 
                     dan inovasi anak muda yang semakin beragam dan menarik.
                 </div>
+                <div style="margin-top: 30px;">
+                    <button class="action-button sm" onclick="switchPage('home-page')">Back</button>
+                </div>
             </div>
 
             <div id="carasel-page" class="page-section">
@@ -386,6 +402,9 @@
                     <span class="kw-blue">CARASEL</span> tidak hanya mengekspresikan dalam seni namun 
                     <span class="kw-green">OSIS/MPK SMAN 68 Jakarta</span> pastinya mengundang beberapa artis yang setiap
                     tahunnya berbeda.
+                </div>
+                <div style="margin-top: 30px;">
+                    <button class="action-button sm" onclick="switchPage('home-page')">Back</button>
                 </div>
             </div>
         </div>
